@@ -1,26 +1,34 @@
 {
   "manifest_version": 2,
-  "name": "Peek and Pop Extension",
+  "name": "Peek and Pop",
   "version": "1.0",
-  "description": "A browser extension that allows users to preview links by hovering over them.",
+
+  "icons": {
+    "16": "image.jfif",
+    "48": "image.jfif",
+    "128": "image.jfif"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "image.jfif",
+      "48": "image.jfif",
+      "128": "image.jfif"
+    },
+    "default_popup": "popup.html"
+  },
+
   "permissions": [
     "activeTab",
-    "tabs"
+    "tabs",
+    "storage"
   ],
+
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"],
       "css": ["content.css"]
     }
-  ],
-  "browser_action": {
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "32": "icons/icon32.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    },
-    "default_popup": "popup.html"
-  }
+  ]
 }
