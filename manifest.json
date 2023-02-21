@@ -3,11 +3,6 @@
   "name": "Peek and Pop Extension",
   "version": "1.0",
   "description": "A browser extension that allows users to preview links by hovering over them.",
-"icons": {
-    "16": "https://shop.evocorse.com/img/prd/RICAMBI//A5.000006.00_big_1.png",
-    "48": "https://shop.evocorse.com/img/prd/RICAMBI//A5.000006.00_big_1.png",
-    "128": "https://shop.evocorse.com/img/prd/RICAMBI//A5.000006.00_big_1.png"
-  },
   "permissions": [
     "activeTab",
     "tabs"
