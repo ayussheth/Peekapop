@@ -1,34 +1,32 @@
 {
-  "manifest_version": 2,
-  "name": "Peek and Pop",
-  "version": "1.0",
-
-  "icons": {
-    "16": "image.jfif",
-    "48": "image.jfif",
-    "128": "image.jfif"
-  },
-
-  "browser_action": {
-    "default_icon": {
-      "16": "image.jfif",
-      "48": "image.jfif",
-      "128": "image.jfif"
-    },
-    "default_popup": "popup.html"
-  },
-
-  "permissions": [
-    "activeTab",
-    "tabs",
-    "storage"
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0.0",
+  "description": "A brief description of my extension.",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
   ],
-
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["popup.js"],
-      "css": ["popup.css"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        ".js"
+      ]
     }
   ]
 }
